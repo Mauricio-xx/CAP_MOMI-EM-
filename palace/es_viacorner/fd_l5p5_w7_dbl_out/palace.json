@@ -1,0 +1,83 @@
+{
+  "ElapsedTime": {
+    "Counts": {
+      "Adaptation": 0,
+      "CoarseSolve": 24,
+      "Construction": 1,
+      "DiskIO": 3,
+      "Div.-FreeProjection": 0,
+      "EigenvalueSolve": 0,
+      "Estimation": 2,
+      "FarFields": 0,
+      "Gridfunction": 0,
+      "Initialization": 2,
+      "LinearSolve": 2,
+      "MeshPreprocessing": 1,
+      "OperatorConstruction": 1,
+      "PROMConstruction": 0,
+      "PROMSolve": 0,
+      "Paraview": 0,
+      "Postprocessing": 6,
+      "Preconditioner": 24,
+      "Rebalancing": 0,
+      "Setup": 1,
+      "Solve": 2,
+      "TimeStepping": 0,
+      "Total": 1,
+      "WavePorts": 0
+    },
+    "Durations": {
+      "Adaptation": 0.0,
+      "CoarseSolve": 0.107758154,
+      "Construction": 9.453608864,
+      "DiskIO": 2.396514467,
+      "Div.-FreeProjection": 0.0,
+      "EigenvalueSolve": 0.0,
+      "Estimation": 0.20072793,
+      "FarFields": 0.0,
+      "Gridfunction": 0.0,
+      "Initialization": 0.355753413,
+      "LinearSolve": 0.911236351,
+      "MeshPreprocessing": 3.94567618,
+      "OperatorConstruction": 0.947018135,
+      "PROMConstruction": 0.0,
+      "PROMSolve": 0.0,
+      "Paraview": 0.0,
+      "Postprocessing": 0.296946535,
+      "Preconditioner": 7.954679616999998,
+      "Rebalancing": 0.0,
+      "Setup": 3.911803345,
+      "Solve": 17.19257196,
+      "TimeStepping": 0.0,
+      "Total": 47.771841264,
+      "WavePorts": 0.0
+    }
+  },
+  "GitTag": "v0.16.0-34-gea2e7b23",
+  "LinearSolver": {
+    "TotalIts": 20,
+    "TotalSolves": 2
+  },
+  "PeakMemoryMegabytes": {
+    "Average": 595.9140625,
+    "Max": 598.1953125,
+    "Min": 591.53125,
+    "Total": 3575.484375
+  },
+  "PeakNodeMemoryMegabytes": {
+    "Average": 3575.484375,
+    "Max": 3575.484375,
+    "Min": 3575.484375,
+    "Total": 3575.484375
+  },
+  "Problem": {
+    "DegreesOfFreedom": 492752,
+    "MPISize": 6,
+    "MeshElements": 288824,
+    "MultigridDegreesOfFreedom": [
+      73155,
+      492752
+    ],
+    "OpenMPThreads": 1
+  }
+}

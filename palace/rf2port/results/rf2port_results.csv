@@ -1,0 +1,4 @@
+device,basename,nports,Cdiff_fF,s2p,peak_rss_mb,build_s,solve_s
+cap_mom_double_04p9um,cap_mom_double_04p9um_rf_tb,2,23.8200,/home/montanares/git/slim-pdk/issue92_em/palace/rf2port/results/cap_mom_double_04p9um.s2p,,,
+cap_mom_double_02p0um,cap_mom_double_02p0um_rf_tb,2,4.1300,/home/montanares/git/slim-pdk/issue92_em/palace/rf2port/results/cap_mom_double_02p0um.s2p,322,9,173
+cap_mom_double_10p7um,cap_mom_double_10p7um_rf_tb,2,134.5200,/home/montanares/git/slim-pdk/issue92_em/palace/rf2port/results/cap_mom_double_10p7um.s2p,1750,2015,1503

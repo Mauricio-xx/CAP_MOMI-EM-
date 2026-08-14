@@ -1,0 +1,83 @@
+{
+  "ElapsedTime": {
+    "Counts": {
+      "Adaptation": 0,
+      "CoarseSolve": 32,
+      "Construction": 1,
+      "DiskIO": 3,
+      "Div.-FreeProjection": 0,
+      "EigenvalueSolve": 0,
+      "Estimation": 2,
+      "FarFields": 0,
+      "Gridfunction": 0,
+      "Initialization": 2,
+      "LinearSolve": 2,
+      "MeshPreprocessing": 1,
+      "OperatorConstruction": 1,
+      "PROMConstruction": 0,
+      "PROMSolve": 0,
+      "Paraview": 0,
+      "Postprocessing": 6,
+      "Preconditioner": 32,
+      "Rebalancing": 0,
+      "Setup": 1,
+      "Solve": 2,
+      "TimeStepping": 0,
+      "Total": 1,
+      "WavePorts": 0
+    },
+    "Durations": {
+      "Adaptation": 0.0,
+      "CoarseSolve": 0.3103280950000001,
+      "Construction": 29.124136364,
+      "DiskIO": 10.689527373999999,
+      "Div.-FreeProjection": 0.0,
+      "EigenvalueSolve": 0.0,
+      "Estimation": 0.6918193920000001,
+      "FarFields": 0.0,
+      "Gridfunction": 0.0,
+      "Initialization": 0.835186825,
+      "LinearSolve": 3.618928684999999,
+      "MeshPreprocessing": 17.198977,
+      "OperatorConstruction": 2.6848794369999998,
+      "PROMConstruction": 0.0,
+      "PROMSolve": 0.0,
+      "Paraview": 0.0,
+      "Postprocessing": 0.9414817509999998,
+      "Preconditioner": 31.684191865,
+      "Rebalancing": 0.0,
+      "Setup": 15.585834018,
+      "Solve": 25.420890462,
+      "TimeStepping": 0.0,
+      "Total": 138.836500117,
+      "WavePorts": 0.0
+    }
+  },
+  "GitTag": "v0.16.0-34-gea2e7b23",
+  "LinearSolver": {
+    "TotalIts": 28,
+    "TotalSolves": 2
+  },
+  "PeakMemoryMegabytes": {
+    "Average": 2891.9482421875,
+    "Max": 2899.125,
+    "Min": 2880.31640625,
+    "Total": 23135.5859375
+  },
+  "PeakNodeMemoryMegabytes": {
+    "Average": 23135.5859375,
+    "Max": 23135.5859375,
+    "Min": 23135.5859375,
+    "Total": 23135.5859375
+  },
+  "Problem": {
+    "DegreesOfFreedom": 2919538,
+    "MPISize": 8,
+    "MeshElements": 2078564,
+    "MultigridDegreesOfFreedom": [
+      376616,
+      2919538
+    ],
+    "OpenMPThreads": 1
+  }
+}

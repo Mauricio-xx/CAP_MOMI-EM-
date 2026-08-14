@@ -1,0 +1,5 @@
+# regenerable / bulky campaign artifacts (reproduce with regen_clean.py)
+gds_fixed/
+gds_fixed_prebranch_labels/
+es/
+logs/

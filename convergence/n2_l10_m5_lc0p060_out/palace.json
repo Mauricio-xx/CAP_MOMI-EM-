@@ -1,0 +1,83 @@
+{
+  "ElapsedTime": {
+    "Counts": {
+      "Adaptation": 0,
+      "CoarseSolve": 28,
+      "Construction": 1,
+      "DiskIO": 3,
+      "Div.-FreeProjection": 0,
+      "EigenvalueSolve": 0,
+      "Estimation": 2,
+      "FarFields": 0,
+      "Gridfunction": 0,
+      "Initialization": 2,
+      "LinearSolve": 2,
+      "MeshPreprocessing": 1,
+      "OperatorConstruction": 1,
+      "PROMConstruction": 0,
+      "PROMSolve": 0,
+      "Paraview": 0,
+      "Postprocessing": 6,
+      "Preconditioner": 28,
+      "Rebalancing": 0,
+      "Setup": 1,
+      "Solve": 2,
+      "TimeStepping": 0,
+      "Total": 1,
+      "WavePorts": 0
+    },
+    "Durations": {
+      "Adaptation": 0.0,
+      "CoarseSolve": 0.30759336200000004,
+      "Construction": 34.96197621,
+      "DiskIO": 12.855965451,
+      "Div.-FreeProjection": 0.0,
+      "EigenvalueSolve": 0.0,
+      "Estimation": 0.6657913870000001,
+      "FarFields": 0.0,
+      "Gridfunction": 0.0,
+      "Initialization": 0.939517767,
+      "LinearSolve": 3.3856229019999997,
+      "MeshPreprocessing": 20.024621751999998,
+      "OperatorConstruction": 2.8206723479999996,
+      "PROMConstruction": 0.0,
+      "PROMSolve": 0.0,
+      "Paraview": 0.0,
+      "Postprocessing": 0.9651029499999999,
+      "Preconditioner": 30.145880457999997,
+      "Rebalancing": 0.0,
+      "Setup": 21.906650471,
+      "Solve": 31.399365235,
+      "TimeStepping": 0.0,
+      "Total": 160.439575461,
+      "WavePorts": 0.0
+    }
+  },
+  "GitTag": "v0.16.0-34-gea2e7b23",
+  "LinearSolver": {
+    "TotalIts": 24,
+    "TotalSolves": 2
+  },
+  "PeakMemoryMegabytes": {
+    "Average": 3115.23779296875,
+    "Max": 3126.203125,
+    "Min": 3103.63671875,
+    "Total": 24921.90234375
+  },
+  "PeakNodeMemoryMegabytes": {
+    "Average": 24921.90234375,
+    "Max": 24921.90234375,
+    "Min": 24921.90234375,
+    "Total": 24921.90234375
+  },
+  "Problem": {
+    "DegreesOfFreedom": 3313492,
+    "MPISize": 8,
+    "MeshElements": 2221337,
+    "MultigridDegreesOfFreedom": [
+      449991,
+      3313492
+    ],
+    "OpenMPThreads": 1
+  }
+}

@@ -1,0 +1,52 @@
+{
+ "Problem": {
+  "Type": "Electrostatic",
+  "Verbose": 2,
+  "Output": "fdn_m24_dbl_lc0p10_out"
+ },
+ "Model": {
+  "Mesh": "fdn_m24_dbl_lc0p10.msh",
+  "L0": 1e-06
+ },
+ "Domains": {
+  "Materials": [
+   {
+    "Attributes": [
+     1
+    ],
+    "Permittivity": 4.1
+   }
+  ]
+ },
+ "Boundaries": {
+  "Ground": {
+   "Attributes": [
+    4
+   ]
+  },
+  "Terminal": [
+   {
+    "Index": 1,
+    "Attributes": [
+     2
+    ]
+   },
+   {
+    "Index": 2,
+    "Attributes": [
+     3
+    ]
+   }
+  ]
+ },
+ "Solver": {
+  "Order": 2,
+  "Device": "CPU",
+  "Linear": {
+   "Type": "BoomerAMG",
+   "KSPType": "CG",
+   "Tol": 1e-10,
+   "MaxIts": 500
+  }
+ }
+}

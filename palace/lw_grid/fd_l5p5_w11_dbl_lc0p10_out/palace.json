@@ -1,0 +1,83 @@
+{
+  "ElapsedTime": {
+    "Counts": {
+      "Adaptation": 0,
+      "CoarseSolve": 26,
+      "Construction": 1,
+      "DiskIO": 3,
+      "Div.-FreeProjection": 0,
+      "EigenvalueSolve": 0,
+      "Estimation": 2,
+      "FarFields": 0,
+      "Gridfunction": 0,
+      "Initialization": 2,
+      "LinearSolve": 2,
+      "MeshPreprocessing": 1,
+      "OperatorConstruction": 1,
+      "PROMConstruction": 0,
+      "PROMSolve": 0,
+      "Paraview": 0,
+      "Postprocessing": 6,
+      "Preconditioner": 26,
+      "Rebalancing": 0,
+      "Setup": 1,
+      "Solve": 2,
+      "TimeStepping": 0,
+      "Total": 1,
+      "WavePorts": 0
+    },
+    "Durations": {
+      "Adaptation": 0.0,
+      "CoarseSolve": 0.157876013,
+      "Construction": 22.066441009,
+      "DiskIO": 5.944098830000001,
+      "Div.-FreeProjection": 0.0,
+      "EigenvalueSolve": 0.0,
+      "Estimation": 0.37169847699999997,
+      "FarFields": 0.0,
+      "Gridfunction": 0.0,
+      "Initialization": 0.621894367,
+      "LinearSolve": 1.6581101269999996,
+      "MeshPreprocessing": 9.456626155999999,
+      "OperatorConstruction": 1.5603562950000003,
+      "PROMConstruction": 0.0,
+      "PROMSolve": 0.0,
+      "Paraview": 0.0,
+      "Postprocessing": 0.587683992,
+      "Preconditioner": 14.746619961999999,
+      "Rebalancing": 0.0,
+      "Setup": 6.270102023,
+      "Solve": 24.74548335,
+      "TimeStepping": 0.0,
+      "Total": 88.237719324,
+      "WavePorts": 0.0
+    }
+  },
+  "GitTag": "v0.16.0-34-gea2e7b23",
+  "LinearSolver": {
+    "TotalIts": 22,
+    "TotalSolves": 2
+  },
+  "PeakMemoryMegabytes": {
+    "Average": 1621.72509765625,
+    "Max": 1635.8984375,
+    "Min": 1605.796875,
+    "Total": 12973.80078125
+  },
+  "PeakNodeMemoryMegabytes": {
+    "Average": 12973.80078125,
+    "Max": 12973.80078125,
+    "Min": 12973.80078125,
+    "Total": 12973.80078125
+  },
+  "Problem": {
+    "DegreesOfFreedom": 1783528,
+    "MPISize": 8,
+    "MeshElements": 1119873,
+    "MultigridDegreesOfFreedom": [
+      253540,
+      1783528
+    ],
+    "OpenMPThreads": 1
+  }
+}

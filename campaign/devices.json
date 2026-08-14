@@ -1,0 +1,1762 @@
+[
+  {
+    "name": "cap_mom_double_02p0um",
+    "file": "cap_mom_double_02p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_02p0um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 2.0,
+    "params": {
+      "w": "2.0u",
+      "l": "2.0u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_double_04p9um",
+    "file": "cap_mom_double_04p9um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_04p9um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 4.9,
+    "params": {
+      "w": "4.9u",
+      "l": "4.9u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_double_07p8um",
+    "file": "cap_mom_double_07p8um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_07p8um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 7.8,
+    "params": {
+      "w": "7.8u",
+      "l": "7.8u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_double_10p7um",
+    "file": "cap_mom_double_10p7um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_10p7um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 10.7,
+    "params": {
+      "w": "10.7u",
+      "l": "10.7u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_double_13p6um",
+    "file": "cap_mom_double_13p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_13p6um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 13.6,
+    "params": {
+      "w": "13.6u",
+      "l": "13.6u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_double_16p4um",
+    "file": "cap_mom_double_16p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_16p4um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 16.4,
+    "params": {
+      "w": "16.4u",
+      "l": "16.4u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_19p3um",
+    "file": "cap_mom_double_19p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_19p3um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 19.3,
+    "params": {
+      "w": "19.3u",
+      "l": "19.3u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_22p2um",
+    "file": "cap_mom_double_22p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_22p2um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 22.2,
+    "params": {
+      "w": "22.2u",
+      "l": "22.2u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_25p1um",
+    "file": "cap_mom_double_25p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_25p1um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 25.1,
+    "params": {
+      "w": "25.1u",
+      "l": "25.1u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_28p0um",
+    "file": "cap_mom_double_28p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_28p0um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 28.0,
+    "params": {
+      "w": "28.0u",
+      "l": "28.0u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_30p9um",
+    "file": "cap_mom_double_30p9um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_30p9um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 30.9,
+    "params": {
+      "w": "30.9u",
+      "l": "30.9u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_33p8um",
+    "file": "cap_mom_double_33p8um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_33p8um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 33.8,
+    "params": {
+      "w": "33.8u",
+      "l": "33.8u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_36p7um",
+    "file": "cap_mom_double_36p7um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_36p7um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 36.7,
+    "params": {
+      "w": "36.7u",
+      "l": "36.7u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_39p6um",
+    "file": "cap_mom_double_39p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_39p6um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 39.6,
+    "params": {
+      "w": "39.6u",
+      "l": "39.6u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_42p4um",
+    "file": "cap_mom_double_42p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_42p4um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 42.4,
+    "params": {
+      "w": "42.4u",
+      "l": "42.4u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_45p3um",
+    "file": "cap_mom_double_45p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_45p3um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 45.3,
+    "params": {
+      "w": "45.3u",
+      "l": "45.3u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_48p2um",
+    "file": "cap_mom_double_48p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_48p2um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 48.2,
+    "params": {
+      "w": "48.2u",
+      "l": "48.2u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_51p1um",
+    "file": "cap_mom_double_51p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_51p1um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 51.1,
+    "params": {
+      "w": "51.1u",
+      "l": "51.1u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_54p0um",
+    "file": "cap_mom_double_54p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_54p0um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 54.0,
+    "params": {
+      "w": "54.0u",
+      "l": "54.0u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_56p9um",
+    "file": "cap_mom_double_56p9um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_56p9um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 56.9,
+    "params": {
+      "w": "56.9u",
+      "l": "56.9u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_59p8um",
+    "file": "cap_mom_double_59p8um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_59p8um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 59.8,
+    "params": {
+      "w": "59.8u",
+      "l": "59.8u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_62p7um",
+    "file": "cap_mom_double_62p7um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_62p7um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 62.7,
+    "params": {
+      "w": "62.7u",
+      "l": "62.7u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_65p6um",
+    "file": "cap_mom_double_65p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_65p6um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 65.6,
+    "params": {
+      "w": "65.6u",
+      "l": "65.6u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_68p4um",
+    "file": "cap_mom_double_68p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_68p4um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 68.4,
+    "params": {
+      "w": "68.4u",
+      "l": "68.4u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_71p3um",
+    "file": "cap_mom_double_71p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_71p3um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 71.3,
+    "params": {
+      "w": "71.3u",
+      "l": "71.3u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_74p2um",
+    "file": "cap_mom_double_74p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_74p2um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 74.2,
+    "params": {
+      "w": "74.2u",
+      "l": "74.2u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_77p1um",
+    "file": "cap_mom_double_77p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_77p1um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 77.1,
+    "params": {
+      "w": "77.1u",
+      "l": "77.1u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_80p0um",
+    "file": "cap_mom_double_80p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_80p0um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "double",
+    "wl": 80.0,
+    "params": {
+      "w": "80.0u",
+      "l": "80.0u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_02p0um",
+    "file": "cap_mom_same_02p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_02p0um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 2.0,
+    "params": {
+      "w": "2.0u",
+      "l": "2.0u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_same_04p9um",
+    "file": "cap_mom_same_04p9um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_04p9um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 4.9,
+    "params": {
+      "w": "4.9u",
+      "l": "4.9u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_same_07p8um",
+    "file": "cap_mom_same_07p8um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_07p8um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 7.8,
+    "params": {
+      "w": "7.8u",
+      "l": "7.8u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_same_10p7um",
+    "file": "cap_mom_same_10p7um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_10p7um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 10.7,
+    "params": {
+      "w": "10.7u",
+      "l": "10.7u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_same_13p6um",
+    "file": "cap_mom_same_13p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_13p6um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 13.6,
+    "params": {
+      "w": "13.6u",
+      "l": "13.6u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": true
+  },
+  {
+    "name": "cap_mom_same_16p4um",
+    "file": "cap_mom_same_16p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_16p4um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 16.4,
+    "params": {
+      "w": "16.4u",
+      "l": "16.4u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_19p3um",
+    "file": "cap_mom_same_19p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_19p3um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 19.3,
+    "params": {
+      "w": "19.3u",
+      "l": "19.3u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_22p2um",
+    "file": "cap_mom_same_22p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_22p2um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 22.2,
+    "params": {
+      "w": "22.2u",
+      "l": "22.2u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_25p1um",
+    "file": "cap_mom_same_25p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_25p1um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 25.1,
+    "params": {
+      "w": "25.1u",
+      "l": "25.1u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_28p0um",
+    "file": "cap_mom_same_28p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_28p0um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 28.0,
+    "params": {
+      "w": "28.0u",
+      "l": "28.0u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_30p9um",
+    "file": "cap_mom_same_30p9um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_30p9um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 30.9,
+    "params": {
+      "w": "30.9u",
+      "l": "30.9u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_33p8um",
+    "file": "cap_mom_same_33p8um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_33p8um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 33.8,
+    "params": {
+      "w": "33.8u",
+      "l": "33.8u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_36p7um",
+    "file": "cap_mom_same_36p7um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_36p7um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 36.7,
+    "params": {
+      "w": "36.7u",
+      "l": "36.7u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_39p6um",
+    "file": "cap_mom_same_39p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_39p6um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 39.6,
+    "params": {
+      "w": "39.6u",
+      "l": "39.6u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_42p4um",
+    "file": "cap_mom_same_42p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_42p4um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 42.4,
+    "params": {
+      "w": "42.4u",
+      "l": "42.4u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_45p3um",
+    "file": "cap_mom_same_45p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_45p3um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 45.3,
+    "params": {
+      "w": "45.3u",
+      "l": "45.3u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_48p2um",
+    "file": "cap_mom_same_48p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_48p2um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 48.2,
+    "params": {
+      "w": "48.2u",
+      "l": "48.2u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_51p1um",
+    "file": "cap_mom_same_51p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_51p1um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 51.1,
+    "params": {
+      "w": "51.1u",
+      "l": "51.1u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_54p0um",
+    "file": "cap_mom_same_54p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_54p0um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 54.0,
+    "params": {
+      "w": "54.0u",
+      "l": "54.0u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_56p9um",
+    "file": "cap_mom_same_56p9um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_56p9um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 56.9,
+    "params": {
+      "w": "56.9u",
+      "l": "56.9u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_59p8um",
+    "file": "cap_mom_same_59p8um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_59p8um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 59.8,
+    "params": {
+      "w": "59.8u",
+      "l": "59.8u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_62p7um",
+    "file": "cap_mom_same_62p7um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_62p7um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 62.7,
+    "params": {
+      "w": "62.7u",
+      "l": "62.7u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_65p6um",
+    "file": "cap_mom_same_65p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_65p6um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 65.6,
+    "params": {
+      "w": "65.6u",
+      "l": "65.6u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_68p4um",
+    "file": "cap_mom_same_68p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_68p4um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 68.4,
+    "params": {
+      "w": "68.4u",
+      "l": "68.4u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_71p3um",
+    "file": "cap_mom_same_71p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_71p3um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 71.3,
+    "params": {
+      "w": "71.3u",
+      "l": "71.3u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_74p2um",
+    "file": "cap_mom_same_74p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_74p2um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 74.2,
+    "params": {
+      "w": "74.2u",
+      "l": "74.2u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_77p1um",
+    "file": "cap_mom_same_77p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_77p1um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 77.1,
+    "params": {
+      "w": "77.1u",
+      "l": "77.1u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_80p0um",
+    "file": "cap_mom_same_80p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_80p0um.gds",
+    "group": "full",
+    "mmin": 1,
+    "mmax": 4,
+    "N": 4,
+    "feed": "same",
+    "wl": 80.0,
+    "params": {
+      "w": "80.0u",
+      "l": "80.0u",
+      "mmin": 1,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m1m3_65p6um",
+    "file": "cap_mom_double_m1m3_65p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m1m3_65p6um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "double",
+    "wl": 65.6,
+    "params": {
+      "w": "65.6u",
+      "l": "65.6u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m1m3_68p4um",
+    "file": "cap_mom_double_m1m3_68p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m1m3_68p4um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "double",
+    "wl": 68.4,
+    "params": {
+      "w": "68.4u",
+      "l": "68.4u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m1m3_71p3um",
+    "file": "cap_mom_double_m1m3_71p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m1m3_71p3um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "double",
+    "wl": 71.3,
+    "params": {
+      "w": "71.3u",
+      "l": "71.3u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m1m3_74p2um",
+    "file": "cap_mom_double_m1m3_74p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m1m3_74p2um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "double",
+    "wl": 74.2,
+    "params": {
+      "w": "74.2u",
+      "l": "74.2u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m1m3_77p1um",
+    "file": "cap_mom_double_m1m3_77p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m1m3_77p1um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "double",
+    "wl": 77.1,
+    "params": {
+      "w": "77.1u",
+      "l": "77.1u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m1m3_80p0um",
+    "file": "cap_mom_double_m1m3_80p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m1m3_80p0um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "double",
+    "wl": 80.0,
+    "params": {
+      "w": "80.0u",
+      "l": "80.0u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m1m3_65p6um",
+    "file": "cap_mom_same_m1m3_65p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m1m3_65p6um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "same",
+    "wl": 65.6,
+    "params": {
+      "w": "65.6u",
+      "l": "65.6u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m1m3_68p4um",
+    "file": "cap_mom_same_m1m3_68p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m1m3_68p4um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "same",
+    "wl": 68.4,
+    "params": {
+      "w": "68.4u",
+      "l": "68.4u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m1m3_71p3um",
+    "file": "cap_mom_same_m1m3_71p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m1m3_71p3um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "same",
+    "wl": 71.3,
+    "params": {
+      "w": "71.3u",
+      "l": "71.3u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m1m3_74p2um",
+    "file": "cap_mom_same_m1m3_74p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m1m3_74p2um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "same",
+    "wl": 74.2,
+    "params": {
+      "w": "74.2u",
+      "l": "74.2u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m1m3_77p1um",
+    "file": "cap_mom_same_m1m3_77p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m1m3_77p1um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "same",
+    "wl": 77.1,
+    "params": {
+      "w": "77.1u",
+      "l": "77.1u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m1m3_80p0um",
+    "file": "cap_mom_same_m1m3_80p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m1m3_80p0um.gds",
+    "group": "m1m3",
+    "mmin": 1,
+    "mmax": 3,
+    "N": 3,
+    "feed": "same",
+    "wl": 80.0,
+    "params": {
+      "w": "80.0u",
+      "l": "80.0u",
+      "mmin": 1,
+      "mmax": 3,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m3m4_71p3um",
+    "file": "cap_mom_double_m3m4_71p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m3m4_71p3um.gds",
+    "group": "m3m4",
+    "mmin": 3,
+    "mmax": 4,
+    "N": 2,
+    "feed": "double",
+    "wl": 71.3,
+    "params": {
+      "w": "71.3u",
+      "l": "71.3u",
+      "mmin": 3,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m3m4_74p2um",
+    "file": "cap_mom_double_m3m4_74p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m3m4_74p2um.gds",
+    "group": "m3m4",
+    "mmin": 3,
+    "mmax": 4,
+    "N": 2,
+    "feed": "double",
+    "wl": 74.2,
+    "params": {
+      "w": "74.2u",
+      "l": "74.2u",
+      "mmin": 3,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m3m4_77p1um",
+    "file": "cap_mom_double_m3m4_77p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m3m4_77p1um.gds",
+    "group": "m3m4",
+    "mmin": 3,
+    "mmax": 4,
+    "N": 2,
+    "feed": "double",
+    "wl": 77.1,
+    "params": {
+      "w": "77.1u",
+      "l": "77.1u",
+      "mmin": 3,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m3m4_80p0um",
+    "file": "cap_mom_double_m3m4_80p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m3m4_80p0um.gds",
+    "group": "m3m4",
+    "mmin": 3,
+    "mmax": 4,
+    "N": 2,
+    "feed": "double",
+    "wl": 80.0,
+    "params": {
+      "w": "80.0u",
+      "l": "80.0u",
+      "mmin": 3,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m3m4_71p3um",
+    "file": "cap_mom_same_m3m4_71p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m3m4_71p3um.gds",
+    "group": "m3m4",
+    "mmin": 3,
+    "mmax": 4,
+    "N": 2,
+    "feed": "same",
+    "wl": 71.3,
+    "params": {
+      "w": "71.3u",
+      "l": "71.3u",
+      "mmin": 3,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m3m4_74p2um",
+    "file": "cap_mom_same_m3m4_74p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m3m4_74p2um.gds",
+    "group": "m3m4",
+    "mmin": 3,
+    "mmax": 4,
+    "N": 2,
+    "feed": "same",
+    "wl": 74.2,
+    "params": {
+      "w": "74.2u",
+      "l": "74.2u",
+      "mmin": 3,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m3m4_77p1um",
+    "file": "cap_mom_same_m3m4_77p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m3m4_77p1um.gds",
+    "group": "m3m4",
+    "mmin": 3,
+    "mmax": 4,
+    "N": 2,
+    "feed": "same",
+    "wl": 77.1,
+    "params": {
+      "w": "77.1u",
+      "l": "77.1u",
+      "mmin": 3,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m3m4_80p0um",
+    "file": "cap_mom_same_m3m4_80p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m3m4_80p0um.gds",
+    "group": "m3m4",
+    "mmin": 3,
+    "mmax": 4,
+    "N": 2,
+    "feed": "same",
+    "wl": 80.0,
+    "params": {
+      "w": "80.0u",
+      "l": "80.0u",
+      "mmin": 3,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m2m4_65p6um",
+    "file": "cap_mom_double_m2m4_65p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m2m4_65p6um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "double",
+    "wl": 65.6,
+    "params": {
+      "w": "65.6u",
+      "l": "65.6u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m2m4_68p4um",
+    "file": "cap_mom_double_m2m4_68p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m2m4_68p4um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "double",
+    "wl": 68.4,
+    "params": {
+      "w": "68.4u",
+      "l": "68.4u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m2m4_71p3um",
+    "file": "cap_mom_double_m2m4_71p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m2m4_71p3um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "double",
+    "wl": 71.3,
+    "params": {
+      "w": "71.3u",
+      "l": "71.3u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m2m4_74p2um",
+    "file": "cap_mom_double_m2m4_74p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m2m4_74p2um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "double",
+    "wl": 74.2,
+    "params": {
+      "w": "74.2u",
+      "l": "74.2u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m2m4_77p1um",
+    "file": "cap_mom_double_m2m4_77p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m2m4_77p1um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "double",
+    "wl": 77.1,
+    "params": {
+      "w": "77.1u",
+      "l": "77.1u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_double_m2m4_80p0um",
+    "file": "cap_mom_double_m2m4_80p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_double_m2m4_80p0um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "double",
+    "wl": 80.0,
+    "params": {
+      "w": "80.0u",
+      "l": "80.0u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "double",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m2m4_65p6um",
+    "file": "cap_mom_same_m2m4_65p6um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m2m4_65p6um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "same",
+    "wl": 65.6,
+    "params": {
+      "w": "65.6u",
+      "l": "65.6u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m2m4_68p4um",
+    "file": "cap_mom_same_m2m4_68p4um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m2m4_68p4um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "same",
+    "wl": 68.4,
+    "params": {
+      "w": "68.4u",
+      "l": "68.4u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m2m4_71p3um",
+    "file": "cap_mom_same_m2m4_71p3um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m2m4_71p3um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "same",
+    "wl": 71.3,
+    "params": {
+      "w": "71.3u",
+      "l": "71.3u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m2m4_74p2um",
+    "file": "cap_mom_same_m2m4_74p2um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m2m4_74p2um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "same",
+    "wl": 74.2,
+    "params": {
+      "w": "74.2u",
+      "l": "74.2u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m2m4_77p1um",
+    "file": "cap_mom_same_m2m4_77p1um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m2m4_77p1um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "same",
+    "wl": 77.1,
+    "params": {
+      "w": "77.1u",
+      "l": "77.1u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  },
+  {
+    "name": "cap_mom_same_m2m4_80p0um",
+    "file": "cap_mom_same_m2m4_80p0um.gds",
+    "fab_gds": "/home/montanares/git/slim-pdk/cap_mom_characterization/gds/cap_mom_same_m2m4_80p0um.gds",
+    "group": "m2m4",
+    "mmin": 2,
+    "mmax": 4,
+    "N": 3,
+    "feed": "same",
+    "wl": 80.0,
+    "params": {
+      "w": "80.0u",
+      "l": "80.0u",
+      "mmin": 2,
+      "mmax": 4,
+      "feed": "same",
+      "subblock": 0
+    },
+    "starter": false
+  }
+]

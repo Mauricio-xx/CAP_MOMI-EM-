@@ -1,0 +1,83 @@
+{
+  "ElapsedTime": {
+    "Counts": {
+      "Adaptation": 0,
+      "CoarseSolve": 24,
+      "Construction": 1,
+      "DiskIO": 3,
+      "Div.-FreeProjection": 0,
+      "EigenvalueSolve": 0,
+      "Estimation": 2,
+      "FarFields": 0,
+      "Gridfunction": 0,
+      "Initialization": 2,
+      "LinearSolve": 2,
+      "MeshPreprocessing": 1,
+      "OperatorConstruction": 1,
+      "PROMConstruction": 0,
+      "PROMSolve": 0,
+      "Paraview": 0,
+      "Postprocessing": 6,
+      "Preconditioner": 24,
+      "Rebalancing": 0,
+      "Setup": 1,
+      "Solve": 2,
+      "TimeStepping": 0,
+      "Total": 1,
+      "WavePorts": 0
+    },
+    "Durations": {
+      "Adaptation": 0.0,
+      "CoarseSolve": 0.04294212299999999,
+      "Construction": 3.783797077,
+      "DiskIO": 1.203628726,
+      "Div.-FreeProjection": 0.0,
+      "EigenvalueSolve": 0.0,
+      "Estimation": 0.08453387700000001,
+      "FarFields": 0.0,
+      "Gridfunction": 0.0,
+      "Initialization": 0.16322602900000002,
+      "LinearSolve": 0.33537389800000006,
+      "MeshPreprocessing": 2.072773558,
+      "OperatorConstruction": 0.3769573779999999,
+      "PROMConstruction": 0.0,
+      "PROMSolve": 0.0,
+      "Paraview": 0.0,
+      "Postprocessing": 0.11978719499999997,
+      "Preconditioner": 3.020945079000001,
+      "Rebalancing": 0.0,
+      "Setup": 1.857130853,
+      "Solve": 7.966999428,
+      "TimeStepping": 0.0,
+      "Total": 21.088391463,
+      "WavePorts": 0.0
+    }
+  },
+  "GitTag": "v0.16.0-34-gea2e7b23",
+  "LinearSolver": {
+    "TotalIts": 20,
+    "TotalSolves": 2
+  },
+  "PeakMemoryMegabytes": {
+    "Average": 454.31201171875,
+    "Max": 459.08984375,
+    "Min": 448.39453125,
+    "Total": 3634.49609375
+  },
+  "PeakNodeMemoryMegabytes": {
+    "Average": 3634.49609375,
+    "Max": 3634.49609375,
+    "Min": 3634.49609375,
+    "Total": 3634.49609375
+  },
+  "Problem": {
+    "DegreesOfFreedom": 494198,
+    "MPISize": 8,
+    "MeshElements": 280778,
+    "MultigridDegreesOfFreedom": [
+      74055,
+      494198
+    ],
+    "OpenMPThreads": 1
+  }
+}

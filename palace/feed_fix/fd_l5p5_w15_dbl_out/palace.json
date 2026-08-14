@@ -1,0 +1,83 @@
+{
+  "ElapsedTime": {
+    "Counts": {
+      "Adaptation": 0,
+      "CoarseSolve": 26,
+      "Construction": 1,
+      "DiskIO": 3,
+      "Div.-FreeProjection": 0,
+      "EigenvalueSolve": 0,
+      "Estimation": 2,
+      "FarFields": 0,
+      "Gridfunction": 0,
+      "Initialization": 2,
+      "LinearSolve": 2,
+      "MeshPreprocessing": 1,
+      "OperatorConstruction": 1,
+      "PROMConstruction": 0,
+      "PROMSolve": 0,
+      "Paraview": 0,
+      "Postprocessing": 6,
+      "Preconditioner": 26,
+      "Rebalancing": 0,
+      "Setup": 1,
+      "Solve": 2,
+      "TimeStepping": 0,
+      "Total": 1,
+      "WavePorts": 0
+    },
+    "Durations": {
+      "Adaptation": 0.0,
+      "CoarseSolve": 0.16976754399999996,
+      "Construction": 17.537342126,
+      "DiskIO": 7.7931066719999995,
+      "Div.-FreeProjection": 0.0,
+      "EigenvalueSolve": 0.0,
+      "Estimation": 0.4432055589999999,
+      "FarFields": 0.0,
+      "Gridfunction": 0.0,
+      "Initialization": 0.6563551409999999,
+      "LinearSolve": 1.9736852279999997,
+      "MeshPreprocessing": 12.26854013,
+      "OperatorConstruction": 1.8974373059999998,
+      "PROMConstruction": 0.0,
+      "PROMSolve": 0.0,
+      "Paraview": 0.0,
+      "Postprocessing": 0.6364058530000001,
+      "Preconditioner": 17.872956026,
+      "Rebalancing": 0.0,
+      "Setup": 7.141931415,
+      "Solve": 35.5501042,
+      "TimeStepping": 0.0,
+      "Total": 103.995926833,
+      "WavePorts": 0.0
+    }
+  },
+  "GitTag": "v0.16.0-34-gea2e7b23",
+  "LinearSolver": {
+    "TotalIts": 22,
+    "TotalSolves": 2
+  },
+  "PeakMemoryMegabytes": {
+    "Average": 2172.62548828125,
+    "Max": 2185.44140625,
+    "Min": 2154.65625,
+    "Total": 17381.00390625
+  },
+  "PeakNodeMemoryMegabytes": {
+    "Average": 17381.00390625,
+    "Max": 17381.00390625,
+    "Min": 17381.00390625,
+    "Total": 17381.00390625
+  },
+  "Problem": {
+    "DegreesOfFreedom": 2457205,
+    "MPISize": 8,
+    "MeshElements": 1505355,
+    "MultigridDegreesOfFreedom": [
+      354977,
+      2457205
+    ],
+    "OpenMPThreads": 1
+  }
+}

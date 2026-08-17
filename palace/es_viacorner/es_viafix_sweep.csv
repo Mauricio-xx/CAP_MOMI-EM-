@@ -1,0 +1,5 @@
+cell,N_metal,l_um,w_um,rows,solver,C12_fF
+fd_l5p5_w7_dbl_viafix,4,5.5,7,7,electrostatic_viafix,35.5111
+fd_l5p5_w2_dbl_viafix,4,5.5,2,2,electrostatic_viafix,10.2108
+fd_l5p5_w5_dbl_viafix,4,5.5,5,5,electrostatic_viafix,25.3569
+fd_l5p5_w15_dbl_viafix,4,5.5,15,16,electrostatic_viafix,81.2622

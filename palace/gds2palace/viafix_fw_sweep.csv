@@ -1,0 +1,5 @@
+cell,N_metal,l_um,w_um,rows,stackup,C_fF
+fd_l5p5_w7_dbl_viafix,4,5.5,7,7,sub_viafix,37.1176
+fd_l5p5_w2_dbl_viafix,4,5.5,2,2,sub_viafix,10.8074
+fd_l5p5_w5_dbl_viafix,4,5.5,5,5,sub_viafix,26.6292
+fd_l5p5_w15_dbl_viafix,4,5.5,15,16,sub_viafix,84.4325

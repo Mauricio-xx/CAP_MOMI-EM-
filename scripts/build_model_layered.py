@@ -4,7 +4,7 @@ WHY THIS EXISTS (and the caveat that came with it)
 ---------------------------------------------------
 This is the layered-eps variant of build_model.py, written to test whether the
 constant 0.864x per-N area-density gap between our uniform-eps Palace (eps=4.1)
-and the MOM model development reference notes is a dielectric/eps_eff
+and the transferred N-density coefficients is a dielectric/eps_eff
 effect. The dielectric story needs eps_eff ~= 4.74 (since 4.1/0.864 = 4.745).
 
 That inference was REFUTED before this script was run. The authoritative PDK
@@ -21,9 +21,10 @@ margins; even the upper corner never reaches 4.74.
 CONSEQUENCE: the "pdk-eps profile" is UNIFORM 4.100 in every IMD z-slab. So the
 Z-layering below assigns eps=4.100 to every slab, and this model is numerically
 DEGENERATE with build_model.py (uniform 4.1). Running it will reproduce ~4.10 and
-~1.16 fF/um^2 at N=5; it CANNOT climb toward the reference 1.36, because the PDK has no
-higher permittivity anywhere and this solver cannot reproduce his via/solver
-setup artifacts. The reconciliation therefore graded a layered run NOT_WORTH_IT.
+~1.16 fF/um^2 at N=5; it CANNOT climb toward the shipped g2 N=5 density 1.36,
+because the PDK has no higher permittivity anywhere. The drawn-cell deficit was
+in fact the sparse-via layout, closed by the base+tip via fix, not a dielectric
+effect, so a layered run was graded NOT_WORTH_IT.
 This file is kept as a best-effort artifact: if you want to vary the per-slab eps
 by hand (a hypothesis test the PDK does not support), edit EPS_PROFILE below.
 

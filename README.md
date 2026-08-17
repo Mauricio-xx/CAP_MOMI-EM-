@@ -11,12 +11,12 @@ No third-party reference data is included.
 
 ## Contents
 
-- `gds/` drawn layouts (our pycell) per length / width / metal stack, plus `_port` variants.
+- `gds/` drawn layouts (our pycell) per length / width / metal stack.
 - `campaign/`, `scripts/` the solve and analysis pipeline (gds to Palace to C), including the
   base+tip via generator (`add_tip_vias.py`) and the via-fixed width/length sweeps
   (`run_viafix_fw_sweep.py`, `run_viafix_es_sweep.py`, `run_viafix_lsweep.py`).
-- `palace/` Palace run inputs and outputs: electrostatic `terminal-C`, and full-wave both the
-  early 2-port (`rf2port`) and the clean in-plane-port `gds2palace` flow.
+- `palace/` Palace run inputs and outputs: electrostatic `terminal-C`, and full-wave via the
+  clean in-plane-port `gds2palace` flow.
 - `convergence/` mesh and size convergence data.
 - `results/` extracted capacitance and the validation reports.
 - `fig/`, `docs/` deliverable figures and notes.
@@ -24,9 +24,11 @@ No third-party reference data is included.
 ## Key results
 
 - The model is area-based: `C = density[N]*ax*ay*0.84*0.89 + Cfeed`, with
-  `ax = floor(l/0.84)`, `ay = floor(w/0.89)`. Re-extracted density[N] is
-  1.36 / 1.09 / 0.82 / 0.55 fF/um^2 for N=5 / N=4 / N=3 / N<=2, and the row-count fix
-  (`ay = floor(w/0.89)`, no -1) closes a pre-fix 6 to 44% gap.
+  `ax = floor(l/0.84)`, `ay = floor(w/0.89)`. density[N] = 1.36 / 1.09 / 0.82 / 0.55
+  fF/um^2 (N=5 / N=4 / N=3 / N<=2) are the shipped model coefficients; this campaign
+  re-extracted and confirmed N=4 (1.0947), N=3 (0.8080) and N=2 (0.5289). N=5 (g2 only)
+  is not re-extracted here. The row-count fix (`ay = floor(w/0.89)`, no -1) closes a
+  pre-fix 6 to 44% gap.
 - The pycell now vias each tooth at base and tip, matching the foundry via lattice, and the
   opposite-side (double) feed is billed explicitly (`Cfeed = 0.152*pad_len` for feed=double),
   about +3.6% on the cmos5l default device and +2.9% on the g2 default. The area-density law
@@ -36,11 +38,6 @@ No third-party reference data is included.
   matches the model to ~+-1%. Pooling every W/L geometry onto a residual axis, both bands stay
   flat over ~2 decades of C: the +5% is a physical edge-field fringe, not a size- or
   aspect-dependent error. See `fig/collapse_wl.png` and `fig/model_vs_gds2palace_fw.png`.
-- The earlier +14% by which the campaign 2-port full-wave (`rf2port`) sat above the
-  electrostatic solve was a mesh artifact: that run used `refined_cellsize = 0.5 um`, coarser
-  than the 0.84 um tooth pitch, so it under-resolved the inter-tooth gap that sets C. The
-  gds2palace flow above resolves it and supersedes that number. See
-  `results/FW_MESH_INVESTIGATION.md` and `results/PHASE3_REPORT.md`.
 
 ## Reproduce
 

@@ -1,9 +1,0 @@
-cap_mom_double_04p9um	23.821689
-cap_mom_double_04p9um_deemb	23.819624
-cap_mom_double_02p0um	4.131367
-cap_mom_double_10p7um	134.521391
-cap_mom_open_04p9um	0.053946
-cap_mom_double_04p9um_rc035	22.345981
-cap_mom_double_04p9um_rc025	22.152802
-cap_mom_double_04p9um_rc020	21.684322
-cap_mom_double_04p9um_rc018	21.633304

@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Phase 3 report: EM (Palace) vs updated cap_cmomi Verilog-A (branch 356ff2d).
+"""Phase 3 report: EM (Palace) vs updated cap_cmomi Verilog-A (branch 1e93ffc).
 
 Builds the figures (fig/phase3_*.png) and the markdown report
 results/PHASE3_REPORT.md from the campaign CSVs. Model functions are imported
 from analyze.py so the report and the %err column cannot drift apart.
+
+NOTE: results/PHASE3_REPORT.md is hand-maintained since the gds2palace full-wave
+update. This generator emits the electrostatic campaign tables and figures only;
+the gds2palace full-wave section in the report is hand-added. Re-apply that
+section if you regenerate.
 """
 import os
 import sys
@@ -29,7 +34,6 @@ def load_csv(path):
 
 
 es = load_csv(A.ES_CSV)
-fw = {r["device"]: r for r in load_csv(A.FW_CSV)}
 
 # ---- assemble per-device records -------------------------------------------
 rec = []
@@ -39,10 +43,8 @@ for r in es:
     c_em = float(r["C12_fF"])
     mfix = A.model_C(w, l, N, feed, rowfix=True)
     mpre = A.model_C(w, l, N, feed, rowfix=False)
-    fwc = fw.get(r["name"], {}).get("Cdiff_fF", "")
     rec.append(dict(name=r["name"], w=w, l=l, N=N, feed=feed, ax=ax, ay=ay,
                     area=area, c_em=c_em, mfix=mfix, mpre=mpre,
-                    fw=float(fwc) if fwc else None,
                     err_fix=100 * (mfix - c_em) / c_em,
                     err_pre=100 * (mpre - c_em) / c_em))
 
@@ -74,10 +76,6 @@ plt.rcParams.update({"font.size": 11, "figure.dpi": 130})
 fig, ax1 = plt.subplots(figsize=(6.4, 4.6))
 x = [d["w"] for d in full_dbl]
 ax1.plot(x, [d["c_em"] for d in full_dbl], "o", color="#1f77b4", ms=8, label="EM electrostatic (C12)")
-fwx = [d["w"] for d in full_dbl if d["fw"] is not None]
-fwy = [d["fw"] for d in full_dbl if d["fw"] is not None]
-ax1.plot(fwx, fwy, "s", color="#d62728", ms=8, mfc="none", mew=1.8, label="EM full-wave (Cdiff, 2-port)")
-xs = np.linspace(min(x), max(x), 100)
 ax1.plot(x, [d["mfix"] for d in full_dbl], "-", color="#2ca02c", lw=2, label="model (updated / row-fix)")
 ax1.plot(x, [d["mpre"] for d in full_dbl], "--", color="#888", lw=1.6, label="model (pre-fix, row -1)")
 ax1.set_xlabel("W = L  (um)"); ax1.set_ylabel("Capacitance  (fF)")
@@ -118,18 +116,6 @@ ax3.set_title("Density ladder: comb-to-comb C vs active area")
 ax3.legend(frameon=False, fontsize=9); ax3.grid(alpha=0.3)
 fig.tight_layout(); fig.savefig(f"{FIG}/phase3_density_ladder.png"); plt.close(fig)
 
-# Fig 4: ES vs FW method offset
-fig, ax4 = plt.subplots(figsize=(6.0, 4.0))
-pairs = [(d["w"], d["c_em"], d["fw"]) for d in full_dbl if d["fw"] is not None]
-ratio = [100 * (f - e) / e for _, e, f in pairs]
-ax4.plot([p[0] for p in pairs], ratio, "D-", color="#9467bd", ms=8)
-ax4.axhline(np.mean(ratio), color="#9467bd", ls="--", lw=1,
-            label=f"mean +{np.mean(ratio):.1f}%")
-ax4.set_xlabel("W = L  (um)"); ax4.set_ylabel("(FW - ES) / ES  (%)")
-ax4.set_title("Full-wave (0.5 um mesh) vs electrostatic offset")
-ax4.legend(frameon=False); ax4.grid(alpha=0.3)
-fig.tight_layout(); fig.savefig(f"{FIG}/phase3_es_vs_fw.png"); plt.close(fig)
-
 # ============================ MARKDOWN ======================================
 def row(cells):
     return "| " + " | ".join(str(c) for c in cells) + " |"
@@ -137,27 +123,25 @@ def row(cells):
 
 L = []
 L.append("# cap_mom EM campaign, Phase 3: model validation\n")
-L.append("Palace EM (electrostatic + reference-matched 2-port full-wave) against the "
-         "updated cap_cmomi Verilog-A model (worktree `cap-cmomi-rowfix`, branch "
-         "`fix/cap-cmomi-row-count`, commit `356ff2d`). All layouts regenerated from that "
+L.append("Palace electrostatic EM against the "
+         "updated cap_cmomi Verilog-A model (branch "
+         "`fix/cap-cmomi-row-count`, commit `1e93ffc`). All layouts regenerated from that "
          "branch PCell (via fix + `floor(w/0.89)` rows), geometry XOR-verified against the "
          "simulated GDS. Model function imported from `campaign/analyze.py`, which reproduces "
-         "the branch `.va` goldens (5x5 N4: double 21.11 / same 21.26 / none 20.37 fF).\n")
+         "the branch `.va` goldens (5x5 N4: double 21.12 / same 21.26 / none 20.37 fF).\n")
 
 L.append("## Verdict\n")
 L.append("The updated model matches EM within **+-1.6%** across the full drawn size range for "
          "the fab-relevant full-stack double devices. The row-count fix (`ay=floor(w/0.89)`, no "
          "-1) is what closes the gap: the pre-fix billing under-predicted by 6-44%. Density[N] "
-         "and both feed terms are consistent with the model; the ES<->FW gap is a full-wave mesh "
-         "artifact (see below), not a model error.\n")
+         "and both feed terms are consistent with the model.\n")
 
 L.append("## Full-stack (N=4) double: C vs size\n")
 L.append("![C vs size](../fig/phase3_c_vs_size.png)\n")
-L.append(row(["W=L (um)", "ES C12 (fF)", "FW Cdiff (fF)", "model (fF)", "err %", "pre-fix err %"]))
-L.append(row(["---"] * 6))
+L.append(row(["W=L (um)", "ES C12 (fF)", "model (fF)", "err %", "pre-fix err %"]))
+L.append(row(["---"] * 5))
 for d in full_dbl:
     L.append(row([f"{d['w']:.1f}", f"{d['c_em']:.2f}",
-                  f"{d['fw']:.2f}" if d['fw'] else "-",
                   f"{d['mfix']:.2f}", f"{d['err_fix']:+.2f}", f"{d['err_pre']:+.1f}"]))
 L.append("")
 L.append("![error vs size](../fig/phase3_error_vs_size.png)\n")
@@ -198,48 +182,7 @@ L.append("\nReduced-stack cells run +1 to +7% high. Two documented model simplif
          "identical N), and the double-feed coefficient (0.152, fit on 4-metal pads) over-counts "
          "~1 fF on 2-3 metal stacks.\n")
 
-L.append("## Full-wave vs electrostatic\n")
-L.append("![ES vs FW](../fig/phase3_es_vs_fw.png)\n")
-L.append(f"FW `Cdiff` at the campaign mesh (`refined_cellsize = 0.5 um`) sits "
-         f"**+{min(ratio):.0f} to +{max(ratio):.0f}%** above ES `C12` "
-         f"({', '.join(f'{r:+.1f}%' for r in ratio)} at {', '.join(f'{p[0]:.1f}' for p in pairs)} um). "
-         "This is a full-wave **mesh** artifact, not a physical correction. 0.5 um is coarser than "
-         "the 0.84 um tooth pitch, so the solve under-resolves the inter-tooth gap that sets the "
-         "capacitance; refining only that knob (same geometry) drives `Cdiff` monotonically back "
-         "toward ES:\n")
-# convergence table: 0.5 baseline (campaign mesh) + the fw_converge_04p9 sweep CSV
-_conv = [(0.50, 23.82, 14.6)]
-_cf = f"{ROOT}/palace/rf2port/results/fw_converge_04p9.csv"
-if os.path.exists(_cf):
-    for _r in csv.DictReader(open(_cf)):
-        _conv.append((float(_r["refined_cellsize"]), float(_r["Cdiff_fF"]),
-                      float(_r["off_vs_ES_pct"])))
-_conv = sorted({round(c[0], 3): c for c in _conv}.values(), key=lambda t: -t[0])  # dedupe, coarse->fine
-L.append(row(["refined_cellsize (um)", "Cdiff (fF)", "vs ES 20.79"]))
-L.append(row(["---"] * 3))
-for _rc, _cd, _off in _conv:
-    L.append(row([f"{_rc:.2f}", f"{_cd:.2f}", f"{_off:+.1f}%"]))
-_fine = _conv[-1]
-_falling = len(_conv) > 1 and (_conv[-2][1] - _fine[1]) > 0.25
-if _falling:
-    _lim = (f"Still falling at {_fine[0]:.2f} um ({_fine[2]:+.1f}%), heading to ES with at most a "
-            "small (~few-%) fringe residual.")
-else:
-    _lim = (f"By {_fine[0]:.2f} um it flattens near {_fine[2]:+.0f}% (a small full-wave fringe "
-            "residual, well inside model tolerance).")
-L.append("\n" + _lim + " Two earlier explanations are refuted. The dielectric: a layered 11.9/6.6 "
-         "stackup vs uniform eps=4.1 moves C only -0.6%, since the comb sits buried in the 4.1 IMD "
-         "and substrate/passivation load common-mode to ground and cancel in the differential (at "
-         "60 MHz the substrate is a conductor, not eps=11.9). The un-de-embedded fixture: an FW "
-         "open dummy with the comb removed leaves only 0.05 fF of A-B coupling. So the campaign "
-         "`Cdiff` @0.5 is an under-resolved cross-check, not a +14% correction and not the silicon "
-         "twin; device-level accuracy is set by the fine-mesh ES (lc = 0.10 um) vs model, +-1.6%. "
-         "Full convergence data and ruled-out hypotheses in `FW_MESH_INVESTIGATION.md`.\n")
-
 L.append("## Notes\n")
-L.append("- FW solves for 07p8 and 13p6 um failed on a Palace/MFEM SuperLU singular matrix during "
-         "the ROM build (numerical, not RAM; 10p7 in between succeeded). FW is the cross-check; the "
-         "three good points already fix the offset. Recovering them is optional.\n")
 L.append("- Large reduced-stack fab devices (65-80 um) exceed the fine-mesh RAM floor and are "
          "model-projected (Phase 4); density is intensive and set by the small cells here.\n")
 
@@ -247,4 +190,4 @@ open(REPORT, "w").write("\n".join(L) + "\n")
 print("wrote", REPORT)
 print("figures:", ", ".join(sorted(os.path.basename(p) for p in
       [f"{FIG}/phase3_c_vs_size.png", f"{FIG}/phase3_error_vs_size.png",
-       f"{FIG}/phase3_density_ladder.png", f"{FIG}/phase3_es_vs_fw.png"])))
+       f"{FIG}/phase3_density_ladder.png"])))

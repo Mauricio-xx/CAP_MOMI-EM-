@@ -1,8 +1,9 @@
 #!/bin/bash
 # How much can a coarse mesh inflate the EXTRACTED density?
 #
-# The shipped 1.09 fF/um2 is 19% above what converged Palace measures per drawn
-# coupled row. The hypothesis is that the original characterisation was mesh-limited.
+# The ~19% by which the shipped 1.09 fF/um2 sat above converged Palace per drawn
+# coupled row was the sparse-via drawn layout, not a mesh limit and not a density
+# error; on the base+tip via-fixed cell the converged solve lands on 1.09.
 # Test: extract the delta-length density from the same geometry pair at meshes from
 # deliberately coarse down to the finest we can afford, and see how far it climbs.
 #

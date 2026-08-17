@@ -6,7 +6,7 @@ model, build headless, solve Palace, read the low-frequency capacitance from the
 1-port S-parameter (C = Im(Y11)/2*pi*f). Serial, memory-guarded.
 
 Two stackups per cell:
-  sub   = SG13G2_200um.xml   (real g2 substrate, matches the reference substrate notes)
+  sub   = SG13G2_200um.xml   (real g2 substrate stackup)
   nosub = SG13G2_nosub.xml   (substrate pushed away, ~ comb-to-comb only)
 
 Cells:

@@ -3,7 +3,7 @@
 
 Runs the remaining (cell, stackup) tasks concurrently with a bounded worker pool,
 reduced MPI ranks per solve, and a RAM guard, so we never drop below the free-RAM
-floor. sub runs go first (they give the density-vs-notes headline); nosub after.
+floor. sub runs go first (they give the density headline); nosub after.
 
 Resumable: skips (cell, stackup) already in density_runs.csv.
 """

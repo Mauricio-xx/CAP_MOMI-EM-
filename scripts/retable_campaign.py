@@ -20,6 +20,7 @@ import sys
 
 DENSITY = {2: 0.55, 3: 0.82, 4: 1.09}
 CFEED_SLOPE, CFEED_END = 0.1625, 0.0916      # no layer keying, see cap_cmomi.va
+CFEED2_SLOPE = 0.152                          # opposite-side (double) feed, see cap_cmomi.va
 UC_X, UC_Y = 0.84, 0.89
 T_BAR = 0.21
 
@@ -35,9 +36,10 @@ def nlayers(row):
 def values(w, n):
     ax = max(1, math.floor(w / UC_X + 1e-6))
     ay = max(2, math.floor(w / UC_Y + 1e-6))
-    c_dbl = DENSITY[n] * ax * UC_X * ay * UC_Y
     pad_len = ay * UC_Y + 2 * T_BAR
-    c_same = c_dbl + CFEED_SLOPE * pad_len + CFEED_END
+    c_area = DENSITY[n] * ax * UC_X * ay * UC_Y
+    c_dbl = c_area + CFEED2_SLOPE * pad_len            # opposite-side (double) feed
+    c_same = c_area + CFEED_SLOPE * pad_len + CFEED_END
     return ax, ay, c_dbl, c_same
 
 
@@ -65,15 +67,16 @@ NOTE = """
 > to zero against the current PCell on every conductor layer.
 >
 > The nominal values below count the coupled rows the cell actually draws,
-> `floor(W/0.89)`. The reference notes subtract one row because the structure they
-> characterised ends in single fingers with no counter electrode; this cell has
-> none, so the subtraction did not describe it and every size was under-counted by
-> one row. That correction is geometric and needs no field solver.
+> `floor(W/0.89)`. The earlier model subtracted one row, describing a structure that
+> ends in single fingers with no counter electrode; this cell has none, so the
+> subtraction did not describe it and every size was under-counted by one row. That
+> correction is geometric and needs no field solver.
 >
-> The `same` column moved a second time. The single-side feed term is no longer
-> the notes' `cfeed_per_um * feed_width`, which describes a via-tied fan-in this
-> cell does not draw, but `0.1625 * pad_len + 0.0916` fF fitted on the drawn pads
-> from an electrostatic field solve. The `double` column is unaffected.
+> The `same` column moved a second time. The single-side feed term is no longer the
+> earlier `cfeed_per_um * feed_width`, which describes a via-tied fan-in this cell
+> does not draw, but `0.1625 * pad_len + 0.0916` fF fitted on the drawn pads from an
+> electrostatic field solve. The `double` column also moved: it now carries the
+> opposite-side feed `0.152 * pad_len` (+3.6% at w=l=5, cmos5l N=4).
 >
 > The densities are unchanged and remain the transferred, uncalibrated values this
 > campaign is meant to measure.

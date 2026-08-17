@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
 """Phase 3: verify the updated cap_cmomi Verilog-A model against the EM campaign.
 
-Loads the ES (comb-to-comb C12) and FW (differential Cdiff + .s2p) starter
-results, computes the model prediction with the UPDATED (rowfix branch) formula
-and, for contrast, the PRE-FIX row count, and reports:
+Loads the ES (comb-to-comb C12) starter results, computes the model prediction
+with the UPDATED (rowfix branch) formula and, for contrast, the PRE-FIX row
+count, and reports:
   * density[N] re-extracted from the fixed-via ES sweep (slope of C12 vs area);
   * the row-count fix (EM vs fixed-ay model vs prefix-(ay-1) model, %err);
-  * C(same)-C(double) delta vs the model Cfeed(same)-Cfeed(double);
-  * ES C12 vs FW Cdiff cross-check.
+  * C(same)-C(double) delta vs the model Cfeed(same)-Cfeed(double).
 Writes results/campaign_results.csv (unified) and prints a summary. Runs on
 whatever subset of results exists (safe to run while the batch is still going).
 
-Model (updated / rowfix, matches .va at branch fix/cap-cmomi-row-count 356ff2d):
+Model (updated / rowfix, matches .va at branch fix/cap-cmomi-row-count 1e93ffc):
   C = density[N]*ax*ay*0.84*0.89 + Cfeed
   ax = floor(l/0.84+1e-6), ay = floor(w/0.89+1e-6)
-  density = {<=2:0.55, 3:0.82, >=4:1.09};  pad_len = ay*0.89 + 0.42
+  density = {<=2:0.55, 3:0.82, 4:1.09, 5:1.36};  pad_len = ay*0.89 + 0.42
   Cfeed: none=0;  double = 0.152*pad_len;  same = 0.1625*pad_len + 0.0916
 """
 import os
@@ -24,10 +23,9 @@ import numpy as np
 
 ROOT = "/home/montanares/git/slim-pdk/issue92_em"
 ES_CSV = f"{ROOT}/results/es_campaign.csv"
-FW_CSV = f"{ROOT}/palace/rf2port/results/rf2port_results.csv"
 OUT_CSV = f"{ROOT}/results/campaign_results.csv"
 UC_X, UC_Y = 0.84, 0.89
-DENSITY = {2: 0.55, 3: 0.82, 4: 1.09}
+DENSITY = {2: 0.55, 3: 0.82, 4: 1.09, 5: 1.36}
 # Feed terms from the .va (both feeds add cap to Cmain, keyed on pad_len):
 CFEED_SLOPE, CFEED_END = 0.1625, 0.0916   # feed == 'same'  (single-side)
 CFEED2_SLOPE = 0.152                        # feed == 'double' (opposite-side)
@@ -57,7 +55,7 @@ def model_C(w, l, N, feed, rowfix=True):
     if not rowfix:
         ay = ay - 1
         area = ax * ay * UC_X * UC_Y
-    d = DENSITY[min(4, max(2, N))]
+    d = DENSITY[min(5, max(2, N))]
     # pad_len uses the DRAWN ay (physical), so the row-fix contrast isolates area.
     return d * area + feed_C(feed, pad_len_of(w, l))
 
@@ -70,8 +68,7 @@ def load(path, key):
 
 def main():
     es = {r["name"]: r for r in load(ES_CSV, "name")}
-    fw = {r["device"]: r for r in load(FW_CSV, "device")}
-    print(f"loaded ES={len(es)} FW={len(fw)}")
+    print(f"loaded ES={len(es)}")
 
     rows = []
     for name, r in sorted(es.items()):
@@ -80,10 +77,9 @@ def main():
         c_em = float(r["C12_fF"])
         c_fix = model_C(w, l, N, feed, rowfix=True)
         c_pre = model_C(w, l, N, feed, rowfix=False)
-        fwc = fw.get(name, {}).get("Cdiff_fF", "")
         rows.append(dict(name=name, feed=feed, N=N, w=w, l=l, ax=ax, ay=ay,
                          area=round(area, 3), C12_es=round(c_em, 3),
-                         Cdiff_fw=fwc, model_fix=round(c_fix, 3),
+                         model_fix=round(c_fix, 3),
                          model_pre=round(c_pre, 3),
                          err_fix_pct=round(100 * (c_fix - c_em) / c_em, 2),
                          err_pre_pct=round(100 * (c_pre - c_em) / c_em, 2)))
@@ -137,13 +133,6 @@ def main():
             print(f"  {r['name'][9:]:22} {r['C12_es']:8.2f} {r['model_fix']:9.2f} "
                   f"{r['err_fix_pct']:6.1f} {r['model_pre']:9.2f} {r['err_pre_pct']:6.1f}")
 
-    # ---- ES vs FW cross-check ----
-    print("\n== ES C12 vs FW Cdiff (double) ==")
-    for r in rows:
-        if r["feed"] == "double" and r["Cdiff_fw"]:
-            fwv = float(r["Cdiff_fw"])
-            print(f"  {r['name'][9:]:22} ES={r['C12_es']:7.2f}  FW={fwv:7.2f}  "
-                  f"d={100*(fwv-r['C12_es'])/r['C12_es']:+.1f}%")
     print(f"\nUnified table -> {OUT_CSV}")
 
 

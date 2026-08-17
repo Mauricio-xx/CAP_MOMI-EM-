@@ -104,7 +104,7 @@ def main(out):
     gs = fig.add_gridspec(2, 2, height_ratios=[1.35, 1.0], hspace=0.30, wspace=0.06)
 
     plan(fig.add_subplot(gs[0, 0]), "gds/fd_l5p5_w7_dbl.json",
-         "feed = 'double'   (the reference configuration)",
+         "feed = 'double'   (the default configuration)",
          "one rail per terminal, at opposite ends, about 6 um apart")
     plan(fig.add_subplot(gs[0, 1]), "gds/fd_l5p5_w7_same.json",
          "feed = 'same'   (both terminals on the left)",
@@ -122,12 +122,12 @@ def main(out):
     fig.suptitle("cap_cmomi feed topologies, l = 5.5 um, w = 7 um, Metal1..Metal4",
                  fontsize=12.5, y=0.975)
     fig.text(0.5, 0.018,
-             "The model charges cfeed_per_um[N] x feed_width for 'same' and nothing "
-             "for 'double': 7.65 fF at this size against a drawn overlap of 1.17 fF, "
-             "and 0.99 fF for the 'double' rails it calls zero.\n"
-             "It also scales that charge with the layer count, from 0.70 to 1.28 fF/um, "
-             "while the drawn plates stay on the top two metals whatever the count is and "
-             "measure flat to 4%.",
+             "The shipped model bills Cfeed(same)=0.1625*pad_len+0.0916 fF and "
+             "Cfeed(double)=0.152*pad_len fF (pad_len=floor(w/0.89)*0.89+0.42), with no "
+             "layer-count keying.\n"
+             "The retired model charged cfeed_per_um[N] x feed_width for 'same' and nothing "
+             "for 'double', scaling 0.70 to 1.28 fF/um with the layer count, while the drawn "
+             "plates stay on the top two metals whatever the count is.",
              ha="center", va="bottom", fontsize=9.3, color="0.15")
     fig.subplots_adjust(top=0.90, bottom=0.115, left=0.055, right=0.985)
     fig.savefig(out, dpi=165)

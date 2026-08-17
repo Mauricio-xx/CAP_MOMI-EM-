@@ -1,9 +1,9 @@
 #!/bin/bash
 # Measure the DRAWN single-side feed capacitance.
 #
-# The model adds Cfeed = cfeed_per_um[N] * feed_width for feed='same' and
-# nothing for feed='double', so its claim is exactly about the difference
-# between the two layouts at the same size. That is what this measures.
+# The shipped model bills Cfeed(same)=0.1625*pad_len+0.0916, Cfeed(double)=0.152*pad_len,
+# Cfeed(none)=0 (pad_len=floor(w/0.89)*0.89+0.42). This measures the drawn single-side
+# feed, the C(same)-C(none) difference between the two layouts at the same size.
 #
 # Both members of a pair are built in the SAME outer domain. Their bounding
 # boxes differ by about 0.85 um in x, and a domain that tracked each bbox would

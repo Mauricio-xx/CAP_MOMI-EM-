@@ -51,7 +51,7 @@ def panel(ax, netjson, w_nom, title):
             ax.add_patch(plt.Rectangle((x0, j * UC_Y), x1 - x0, UC_Y,
                                        facecolor="#f1c40f", alpha=0.22, zorder=1))
 
-    ax.set_title(f"{title}\ndibuja {drawn} filas acopladas, el modelo cobra {billed}",
+    ax.set_title(f"{title}\ndibuja {drawn} filas acopladas, el modelo viejo cobraba {billed}",
                  fontsize=10)
     ax.set_xlim(x0 - 0.3, xr + 1.9)
     ax.set_ylim(min(ys) - 0.3, max(ys) + 0.3)
@@ -66,7 +66,8 @@ if __name__ == "__main__":
     for ax, (f, w, t) in zip(axes, cases):
         panel(ax, f, w, t)
     fig.suptitle("Metal1: cada par de barras adyacentes es una fila acoplada. "
-                 "La amarilla la dibuja el PCell y no la cobra el modelo.", fontsize=11)
+                 "La amarilla la dibuja el PCell y el modelo viejo no la cobraba "
+                 "(corregido: ahora se cobra).", fontsize=11)
     fig.tight_layout()
     out = sys.argv[1] if len(sys.argv) > 1 else "rows.png"
     fig.savefig(out, dpi=150)

@@ -1,17 +1,17 @@
 """The area density we did NOT change, and what the row-count fix does to it.
 
 The fix corrects the row COUNT (pure geometry: billed rows now equal drawn rows).
-It does not touch the area density, which stays at the document's flat 1.09 fF/um2
-for N=4. This figure shows why the density is a separate, deferred question.
+It does not touch the area density, which stays at the flat 1.09 fF/um2 currently
+shipped for N=4. This figure shows why the density is a separate, deferred question.
 
 Left: the differenced, mesh-converged coupled-cell density is not constant. It is
 ~1.83 fF/um2 at the narrowest device and falls to ~0.98 at w=15, crossing the flat
 model near w=7. Right: full feed=double devices, old model / Palace and new model /
-Palace. Dropping the -1 lifts the badly under-predicted narrow devices toward 1, but
-against this uniform-dielectric Palace the flat 1.09 then reads high on the wider and
-near-square parts, by 6 to 19%. That residual is the density question, left for
-silicon: the Palace absolute here is a single-eps model and is not a trustworthy
-absolute, only its differences are.
+Palace. Dropping the -1 lifts the badly under-predicted narrow devices toward 1. NOTE:
+this figure is built on the superseded sparse-via, single-eps convergence data, where
+the flat 1.09 reads high on the wider and near-square parts by 6 to 19%; on the base+tip
+via-fixed cell the residual against flat 1.09 collapses to ~+-1%. The single-eps Palace
+absolute here is not trustworthy, only its differences are.
 
 Data: convergence/ANALYSIS.txt (converged densities and the model-vs-Palace table).
 Model numbers recomputed from the shipped formulas; both agree with ANALYSIS.txt.
@@ -93,9 +93,9 @@ def main(out):
                  "separate, deferred question", fontsize=11.8, y=0.99)
     fig.text(0.5, 0.005,
              "The row-count change (drop the -1) is pure geometry and settled. The area density stays at "
-             "the document's flat 1.09; against this single-eps Palace it reads ~6-19% high once the count "
-             "is right. That absolute is not trustworthy (only the differenced feed is), so the density "
-             "re-fit waits on silicon. Data: convergence/ANALYSIS.txt.",
+             "the shipped flat 1.09; on this superseded sparse-via single-eps data it reads ~6-19% high, "
+             "but on the base+tip via-fixed cell the residual collapses to ~+-1%. "
+             "Data: convergence/ANALYSIS.txt (superseded).",
              ha="center", va="bottom", fontsize=8.2, color="0.2")
     fig.tight_layout(rect=(0, 0.05, 1, 0.95))
     fig.savefig(out, dpi=165)

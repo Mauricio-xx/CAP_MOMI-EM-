@@ -1,9 +1,0 @@
-[OK] comb: C12 = 20.790 fF  (tets=460887, 66s)
-[OK] combfeeds: C12 = 20.850 fF  (tets=654119, 85s)
----- ES geometry discriminator (uniform eps=4.1) ----
-ES comb-only (shared domain) : 20.790 fF
-ES comb+feeds (shared domain): 20.850 fF
-ES campaign bare comb        : 20.791 fF
-FW Cdiff (DUT)               : 23.820 fF
-feed geometry adds           : +0.060 fF (+0.3%)
-comb+feeds vs FW             : -12.5%

@@ -27,10 +27,14 @@ the difference, as expected. No change to CFEED.
 The model billed feed=double as `c_active` only (no feed term), justified by an
 "the two errors cancel" argument. That is false: `C(double) - C(none)` is a real,
 systematic residual, ~0.152·pad_len (through-origin, intercept ~0), max fit
-residual 0.033 fF. On the SHIPPED default (feed=double) this makes the old model
-under-predict by a consistent +1.7%:
+residual 0.033 fF. Two numbers, both correct, of different quantities. Accuracy: against the
+EM-measured `C(feed=double)` the old model (`c_active` only) under-read by a
+consistent ~1.7% (table below). Model value: adding `CFEED2_SLOPE*pad_len` raises the
+shipped default device by +3.6% on cmos5l (20.37 -> 21.12 fF) and +2.9% on g2
+(25.42 -> 26.17 fF); the two readings differ because `c_active` already sat slightly
+above the measured `none` device.
 
-| w | c_active (1.09·area) | C(double) | error |
+| w | c_active (1.09·area) | C(double) | error (accuracy) |
 |---|----------------------|-----------|-------|
 | 5 | 24.45 | 24.85 | +1.66% |
 | 7 | 34.23 | 34.80 | +1.68% |

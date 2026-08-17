@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Before/after of the via fix: Metal1 (grey) + Via1 (red) for our cell,
-sparse (as-was, vias only at tooth bases) vs viafix (reference: base + tip).
+sparse (as-was, vias only at tooth bases) vs viafix (base + tip).
 Zoom to a few tooth cells so the extra tip vias are visible.
 Writes fig/via_layout.{png,svg}.
 """
@@ -11,9 +11,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon as MplPoly
 
-ROOT = "/home/montanares/git/slim-pdk/issue92_em"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAIR = [("gds/fd_l5p5_w7_dbl.json", "sin vias (as-was): solo base del diente"),
-        ("gds/fd_l5p5_w7_dbl_viafix.json", "con vias (reference): base + punta")]
+        ("gds/fd_l5p5_w7_dbl_viafix.json", "con vias: base + punta")]
 # zoom window (um): a few coupled rows near the cell centre
 XLIM, YLIM = (0.0, 3.2), (1.6, 5.2)
 

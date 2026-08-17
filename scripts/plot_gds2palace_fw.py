@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """cap_cmomi fd (base+tip vias, _viafix), l=5.5 um width sweep, cmos5l stack:
 Palace full-wave (gds2palace in-plane port) and electrostatic vs the Verilog-A
-model. One clean full-wave flow, no rf2port mesh artifact.
+model. One clean full-wave flow.
 
 Two panels: absolute C vs w (top), and EM/model residual in % (bottom) where the
 small full-wave fringe and the electrostatic agreement are read off cleanly.

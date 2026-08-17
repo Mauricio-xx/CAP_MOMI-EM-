@@ -1,15 +1,15 @@
 # cap_cmomi model changes — cross-session reference
 
-State as of 2026-08-14. These changes are **committed on branch worktrees** but
+State as of 2026-08-17. These changes are **committed on branch worktrees** but
 NOT merged and NOT pushed. The INSTALLED PDKs (`~/.klayout`, `$PDK_ROOT`) do NOT
 have them — point at the worktree to use the updated model.
 
 ## Worktrees (per PDK)
 
 - **cmos5l**: `/home/montanares/git/slim-pdk/IHP-Open-PDK/ihp-sg13cmos5l-worktrees/cap-cmomi-rowfix`
-  branch `fix/cap-cmomi-row-count`, tip commit `356ff2d` ("via the tooth tips and bill the double-side feed")
+  branch `fix/cap-cmomi-row-count`, tip commit `1e93ffc` ("via the tooth tips and bill the double-side feed")
 - **g2**: `/home/montanares/git/IHP-Open-PDK-worktrees/cap-cmomi-g2-fixes/ihp-sg13g2`
-  branch `fix/cap-cmomi-row-and-feed`, tip commit `3bfaa650` (same subject)
+  branch `fix/cap-cmomi-row-and-feed`, tip commit `4d2df894` (same subject)
 
 ## Model changes (both PDKs)
 
@@ -46,6 +46,6 @@ cmos5l tracks `libs.tech/ngspice/osdi/cap_cmomi.osdi` (rebuilt); g2 gitignores o
 - Simulation: rebuild osdi from the branch `.va` (`libs.tech/verilog-a/openvaf-compile-va.sh`)
   and run ngspice with `PDK_ROOT=/home/montanares/git/slim-pdk/IHP-Open-PDK/ihp-sg13cmos5l-worktrees PDK=cap-cmomi-rowfix`
   so `$PDK_ROOT/$PDK` resolves to the worktree (the installed osdi is stale).
-- Numeric check (cmos5l, N=4): `5x5 double = 21.11 fF`, `5x5 same = 21.26 fF`,
+- Numeric check (cmos5l, N=4): `5x5 double = 21.12 fF`, `5x5 same = 21.26 fF`,
   `5x5 none = 20.37 fF`. `libs.tech/klayout/sg13cmos5l_tests/cap_cmomi_consistency_test.py`
   cross-checks PCell / xschem / osdi / goldens and prints PASS.

@@ -1,3 +1,9 @@
+SUPERSEDED. Computed on the old floor(w/0.89)-1 row rule and the sparse-via layout.
+The effective-density ladder (1.83/1.37/1.07/0.98) and the bilinear 0.9147*area+0.6807*nx
+law below are artefacts of those two defects, not evidence against the shipped
+density[N]={0.55,0.82,1.09,1.36}. The via-fixed re-extraction lands on 1.09 (N=4).
+Kept for mesh-convergence history only.
+
 Mesh convergence, C(h) = Cinf + a*h^p
 case                        meshes      p   C_finest    C_inf  left%
 5.5x7  N=4          0.12/0.08/0.06   1.88     29.832   29.569    0.9

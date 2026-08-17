@@ -2,7 +2,7 @@
 """Regenerate every campaign device from the CURRENT branch cap_cmomi PCell.
 
 Provenance-clean regen: the first batch (2026-08-13) ran ~12 h before the model
-edit 356ff2d was committed, so those GDS carry a stale cosmetic C= text label
+edit was committed, so those GDS carry a stale cosmetic C= text label
 (layer 63/0) from the old analytic formula. The DRAWN GEOMETRY was already the
 current branch geometry (via fix + floor(w/0.89) rows, XOR-verified), so nothing
 needs re-simulating; this only refreshes the label so the on-disk layouts match

@@ -32,7 +32,8 @@ No third-party reference data is included.
 - The pycell now vias each tooth at base and tip, matching the foundry via lattice, and the
   opposite-side (double) feed is billed explicitly (`Cfeed = 0.152*pad_len` for feed=double),
   about +3.6% on the cmos5l default device and +2.9% on the g2 default. The area-density law
-  is unchanged: it already assumed a fully-viaed cell.
+  is unchanged: it already assumed a fully-viaed cell. `fig/model_grid_l_w.png` shows the
+  released vs corrected billing across length and width, with a value table per length.
 - Clean gds2palace full-wave (in-plane port, `refined_cellsize = 0.2 um`) sits a consistent
   ~+5% above the electrostatic solve across width and length, and the electrostatic solve
   matches the model to ~+-1%. Pooling every W/L geometry onto a residual axis, both bands stay
@@ -45,6 +46,10 @@ The two model-vs-EM figures regenerate from the committed CSVs:
 
     python scripts/plot_gds2palace_fw.py     # fig/model_vs_gds2palace_fw.png
     python scripts/plot_collapse.py          # fig/collapse_wl.png
+
+The released-vs-corrected model comparison is analytic (no EM input) and also writes its table:
+
+    python scripts/plot_model_grid_l_w.py    # fig/model_grid_l_w.png, results/model_grid_l_w.csv
 
 The solves themselves use Palace 0.16; gmsh and scikit-rf in a venv, klayout.db in system
 python; runs are serial and RAM-gated. See the drivers in `scripts/` and `campaign/`.
